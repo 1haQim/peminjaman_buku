@@ -9,4 +9,10 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+
+    protected $jenis_pengguna = [
+        '' => 'Pilih Pengguna',
+        'siswa' => 'Siswa',
+        'dosen' => 'Dosen'
+    ];
 }
